@@ -1,0 +1,8 @@
+package: github.com/moorereason/unidata_exporter
+import:
+- package: github.com/prometheus/client_golang
+  subpackages:
+  - prometheus/promhttp
+- package: github.com/prometheus/common
+  subpackages:
+  - log
