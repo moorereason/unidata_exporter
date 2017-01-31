@@ -39,7 +39,7 @@ UDTNO USRNBR     UID  USRNAME USRTYPE              TTY         TIME        DATE
 		}
 
 		if !reflect.DeepEqual(*s, tc.want) {
-			t.Error("state mismatch: expected %v, got %v", tc.want, *s)
+			t.Errorf("state mismatch: expected %v, got %v", tc.want, *s)
 		}
 	}
 }
